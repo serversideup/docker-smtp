@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build and tag image
-        run: docker build --pull. --tag serversideup/smtp:latest
+        run: docker build --pull . --tag serversideup/smtp:latest
 
       - name: Push version image to DockerHub
         run: docker push serversideup/smtp:latest
